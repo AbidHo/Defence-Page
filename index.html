@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head> 
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet" />
@@ -41,22 +41,87 @@
         to {
           transform: rotate(105deg) translateX(calc(100vh + 20px));
         }
-      } 
+      }
+      @import url(https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap);
 
-      .pagla {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        to {
+          transform: translateZ(-2px) translateY(5px);
+        }
+
+        40% {
+          transform: rotateY(180deg) translateZ(-2px) translateY(-35px);
+        }
+
+        60% {
+          transform: translateZ(-2px) translateY(-25px);
+        }
       }
-      .pagla h1 {
-        font-family: "Poor Story", cursive;
-        color: white;
-        text-align: center;
+
+      body {
+        background-color: #1a1a1a;
+        background: radial-gradient(circle at center, #1a1546, #040411 40%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+        perspective: 1000px;
       }
-      h2 {
+
+      h3 {
+        font-size: 3.5rem;
+        line-height: 80%;
+        transform: rotateX(0) rotateY(-25deg);
+        text-transform: uppercase;
+        width: 500px;
         text-align: center;
-        font-family: "Poor Story", cursive;
+        color: #b9dfff;
+        color: #fff;
+        font-family: "Zefani";
+        font-family: "Abril Fatface";
+        margin: 3rem auto;
+        position: relative;
+        padding: 2rem 0 9rem;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff;
+      }
+
+      span {
+        display: inline-block;
+      }
+
+      span:first-child {
+        transform: translateZ(10px);
+      }
+
+      span:nth-child(2) {
+        transform: translateZ(5px);
+      }
+
+      span:nth-child(3) {
+        transform: translateZ(8px);
+      }
+
+      span:nth-child(4) {
+        transform: translateZ(20px);
+      }
+
+      span:nth-child(5) {
+        transform: translateZ(6px);
+      }
+
+      span:nth-child(6) {
+        transform: translateZ(20px);
+      }
+      #imgd {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin-top: 50px;
       }
     </style>
     <meta charset="UTF-8" />
@@ -67,11 +132,16 @@
   <body>
     <embed src="music.mp3" loop="true" autostart="true" width="2" height="0" />
     <div class="pagla">
-      <img src="https://raw.githubusercontent.com/AbidHo/Defence-Page/main/Image1.png" />
-      <h1>Hacked By PXY</h1>
-      <h2 style="color: #fff" ;>Hi Admin, I am PXY</h2>
-      <h2 style="color: #fff" ;>Buy 😏</h2>
-
+      <h3>
+        <span>Hacked</span>
+        <span> By</span>
+        <span> PXY</span>
+        <span style="font-size: 18px"> We Are Bangladeshi</span>
+        <span style="font-size: 18px"> Fuck You</span>
+        <span style="font-size: 18px"> Admin</span>
+        <div class="scroll-more">↓</div>
+        <img src="https://raw.githubusercontent.com/AbidHo/Defence-Page/main/Image1.png" id="imgd" />
+      </h3>
     </div>
     <script type="text/javascript">
       let hrElement;
