@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-image: linear-gradient(to bottom, #030420, #000000 70%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      hr {
+        width: 50px;
+        border-color: transparent;
+        border-right-color: rgba(255, 255, 255, 0.7);
+        border-right-width: 50px;
+        position: absolute;
+        bottom: 100%;
+        transform-origin: 100% 50%;
+        animation-name: rain;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes rain {
+        from {
+          transform: rotate(105deg) translateX(0);
+        }
+        to {
+          transform: rotate(105deg) translateX(calc(100vh + 20px));
+        }
+      }
+
+      .pagla {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .pagla h1 {
+        font-family: "Poor Story", cursive;
+        color: white;
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Poor Story", cursive;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <embed src="music.mp3" loop="true" autostart="true" width="2" height="0" />
+    <div class="pagla">
+      <img src="image1.png" />
+      <h1>Hacked By PXY</h1>
+      <h2 style="color: #fff" ;>Fuck You Admin, I am PXY</h2>
+      <h2 style="color: #fff" ;>Buy 😏</h2>
+      <audio controls autoplay>
+        <source src="music.mp3" type="audio/ogg" allow="autoplay" />
+        <source src="music.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+    <script type="text/javascript">
+      let hrElement;
+      let counter = 100;
+      for (let i = 0; i < counter; i++) {
+        hrElement = document.createElement("HR");
+
+        hrElement.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
+        hrElement.style.animationDuration = 0.2 + Math.random() * 0.3 + "s";
+        hrElement.style.animationDelay = Math.random() * 5 + "s";
+
+        document.body.appendChild(hrElement);
+      }
+    </script>
+  </body>
+</html>
