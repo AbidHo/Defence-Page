@@ -1,224 +1,60 @@
+
+
+
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Hacked by D3W3Y</title>
-    <style>
-      center {
-        margin-top: -560px; 
-      }
-      .rain-scene {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      body {
-        box-sizing: border-box;
-        display: grid;
-        place-items: center;
-        padding: 0;
-        height: 100vh;
-        overflow: hidden;
-      }
-
-      .cloud-container {
-        position: relative;
-        z-index: 1;
-      }
-
-      .cloud {
-        background: white;
-      }
-
-      .base-cloud {
-        width: 430px;
-        height: 100px;
-        border-radius: 70px;
-      }
-
-      .left-cloud {
-        --w: 188px;
-        width: var(--w);
-        height: var(--w);
-        border-radius: 50%;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translate(36px, -95px);
-      }
-
-      .center-cloud {
-        --w: 248px;
-        width: var(--w);
-        height: var(--w);
-        border-radius: 50%;
-
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-37px, -150px);
-      }
-
-      .droplets-container {
-        --dch: 470px;
-        width: 95%;
-        height: var(--dch);
-        background: transparent;
-        position: relative;
-        transform: translate(0, -50px);
-      }
-
-      /* clip-path: polygon(52% 46%, 81% 0, 100% 0, 60% 60%, 39% 60%, 0 100%, 0 100%, 33% 47%); */
-
-      .thunder {
-        width: 157px;
-        height: 207px;
-        background: #ffffff78;
-        clip-path: polygon(52% 46%, 81% 0, 100% 0, 60% 60%, 39% 60%, 0 100%, 0 100%, 33% 47%);
-        transform: translate(109px, 46px);
-        opacity: 0;
-        animation: flash 10s linear infinite 0s;
-      }
-
-      .drop {
-        --w: 2px;
-        --h: 16px;
-        width: var(--w);
-        height: var(--h);
-        background: white;
-        border-radius: 5px;
-        box-shadow: 0 0 17px 1px #ccc;
-        position: absolute;
-        top: 0;
-      }
-
-      .droplet {
-        animation: droplet 1s linear infinite 0.3s;
-      }
-
-      @keyframes droplet {
-        from {
-          opacity: 0;
-          transfrom: translate(0, 0);
-        }
-
-        10% {
-          opacity: 1;
-        }
-
-        90% {
-          opacity: 0;
-          transform: translate(0, calc(var(--dch) + 10px));
-        }
-
-        to {
-          opacity: 0;
-          transfrom: translate(0, 0);
-        }
-      }
-
-      @keyframes flash {
-        0% {
-          opacity: 1;
-        }
-        2% {
-          opacity: 0;
-        }
-        3% {
-          opacity: 0.6;
-        }
-        4% {
-          opacity: 0.2;
-        }
-        6% {
-          opacity: 0.9;
-        }
-        10% {
-          opacity: 0;
-        }
-        12% {
-          opacity: 0.6;
-        }
-        14% {
-          opacity: 0.2;
-        }
-        16% {
-          opacity: 0.9;
-        }
-        20% {
-          opacity: 0;
-        }
-        to {
-          opacity: 0;
-        }
-      }
-
-      iframe {
-        display: none;
-      }
-      body {
-        background-color: #1a1a1a;
-        background: radial-gradient(circle at center, #1a1546, #040411 40%);
-      }
-      h2 {
-        font-size: 7vh;
-        text-align: center;
-        color: #b9dfff;
-        color: #fff;
-        font-family: "Zefani";
-        font-family: "Abril Fatface";
-        margin: 3rem auto;
-        position: relative;
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff;
-      }
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.65">
+    <meta name="image" content="https://i.postimg.cc/NMF1W6PD/Image1.png">
+    <meta name="description" content="TEAM PXY IS KING OF CYBER.">
+    <meta name="og:image" content="https://i.postimg.cc/NMF1W6PD/Image1.png">
+    <meta name="og:description" content="Joy Bangla.">
+    <meta name="theme-color" content="black">
+    <link rel="shotcut icon" href="https://i.postimg.cc/NMF1W6PD/Image1.png">
+    <title>Hacked by ./Team PXY</title>
+    <style type="text/css" media="all">
+    @import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+    body {
+      background-color: white;
+      color: black;
+      font-family: serif;
+      font-family: "Kelly Slab";
+    }
+    h1 {
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    p{
+      font-size: 18px; 
+    }
+    img{
+      width: 500px;
+    }
+    audio {
+      opacity:0.50;
+      border-radius:0px;
+      border:0px #fff solid;
+    }
+    center {
+      width:100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 50%;
+      margin: auto;
+      position: absolute;
+    }
     </style>
   </head>
-  \<iframe width="0" height="0" src="http://youtuberepeater.com/" frameborder="0" allowfullscreen></iframe>
-
-  <body background="https://i.imgur.com/5rZ91h5.gif">
-    <div class="rain-scene">
-      <div class="cloud-container">
-        <div class="cloud base-cloud"></div>
-        <div class="cloud left-cloud"></div>
-        <div class="cloud center-cloud"></div>
-      </div>
-      <div class="droplets-container">
-        <div class="thunder thunder-1"></div>
-      </div>
-    </div>
-    <iframe
-      width="200"
-      height="113"
-      src="https://www.youtube.com/embed/hZsaPu-kthY?playlist=hZsaPu-kthY&amp;autoplay=1&amp;loop=1&amp;rel=0&amp;controls=0&amp;showinfo=0"
-      frameborder="0"
-      allowfullscreen
-    ></iframe>
+  <body>
     <center>
-      <h2 style="color: rgb(255, 255, 255)" font-size:5vw;>This website is H4CK3D by PXY.</h2>
-      <img src="https://raw.githubusercontent.com/AbidHo/Defence-Page/main/Image1.png" />
-      <h3 style="color: rgb(204, 204, 204)" font-size:5vw;>*****地獄 CYBER FRIENDS ******</h3>
-      <p style="color: rgb(255, 255, 255)" font-size:5vw;>
-        Greetz to --> ----PXY --- Joint Probability of X and Y X এবং Y এর যৌথ সম্ভাব্যতা Y dna X fo ytilibaborP tnioJ
-      </p>
+      <img src="https://i.postimg.cc/NMF1W6PD/Image1.png" alt="Hacked by ./Team PXY">
+      <h2>Hacked by ./Team PXY | JOY BANGLA</h2>
+      <p>What's the use of having high knowledge if it's only to<br>deceive, what's the point of reading a lot of books if you<br> keep your mouth shut..</p>
+      <p>[ Joy Bangla | MS6BD ]<br>[ Ab1D | Joy Bangladesh Cyber Force ] <br>[ WE PROTECT BANGLADESH ]</p>
+      <audio src="https://b.top4top.io/m_2500xm9t60.mp3" controls></audio>
     </center>
-    <script>
-      const MAX_DELAY = 3;
-      const DCW = 400;
-
-      const DROPS_CONTAINER = document.querySelector(".droplets-container");
-
-      function makeRain() {
-        for (let i = 0; i < 120; i++) {
-          const delay = Math.random() * MAX_DELAY;
-          const left = Math.random() * DCW;
-          const drop = document.createElement("div");
-          drop.classList.add("drop");
-          drop.style.left = `${left}px`;
-          drop.style.animation = `droplet 1.3s infinite ${delay}s`;
-          DROPS_CONTAINER.appendChild(drop);
-        }
-      }
-
-      makeRain();
-    </script>
   </body>
 </html>
